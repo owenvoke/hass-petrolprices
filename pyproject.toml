@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling>=1.8.0", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hass-petrolprices"
+dynamic = ["version"]
+dependencies = [
+    "homeassistant>=2022.11.1",
+    "petrolprices-sdk>=0.1.2"
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.envs.default]
+dependencies = [
+    "black",
+    "mypy",
+    "pytest==7.1"
+]
+
+[tool.hatch.envs.default.scripts]
+test = [
+    "black --check --diff .",
+    "mypy custom_components",
+    "pytest"
+]
+lint = [
+    "black ."
+]
+
+[tool.black]
+target-version = ["py39", "py310"]

@@ -1,0 +1,32 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "PetrolPrices has already been configured for this location and fuel type"
+        },
+        "error": {
+            "invalid_api_token": "Invalid API token.",
+            "not_found": "Could not find the configured details on PetrolPrices.",
+            "server_error": "Could not reach PetrolPrices."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_token": "API token",
+                    "fuel_type": "Fuel type",
+                    "latitude": "Latitude",
+                    "longitude": "Longitude"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "radius": "Change radius (miles)",
+                    "scan_interval": "Change scan interval (minutes)"
+                }
+            }
+        }
+    }
+}

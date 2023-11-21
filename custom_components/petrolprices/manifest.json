@@ -1,0 +1,11 @@
+{
+  "domain": "petrolprices",
+  "name": "PetrolPrices",
+  "version": "0.1.0",
+  "documentation": "https://github.com/owenvoke/hass-petrolprices",
+  "issue_tracker": "https://github.com/owenvoke/hass-petrolprices/issues",
+  "requirements": ["petrolprices-sdk==0.2.2"],
+  "codeowners": ["@owenvoke"],
+  "iot_class": "cloud_polling",
+  "config_flow": true
+}
