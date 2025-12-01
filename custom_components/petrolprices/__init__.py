@@ -1,4 +1,5 @@
 """The PetrolPrices integration"""
+
 import logging
 from datetime import timedelta
 

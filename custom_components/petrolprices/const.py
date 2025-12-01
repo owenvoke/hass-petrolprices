@@ -1,4 +1,5 @@
 """Constants for the PetrolPrices integration."""
+
 from typing import Final
 
 from petrolprices import FuelType

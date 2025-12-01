@@ -46,5 +46,6 @@ async def async_setup_entry(
     coordinator: PetrolPricesUpdateCoordinator = hass.data[DOMAIN][entry.entry_id]
 
     async_add_entities(
-        PetrolPricesSensorEntity(coordinator, entry, description) for description in SENSORS
+        PetrolPricesSensorEntity(coordinator, entry, description)
+        for description in SENSORS
     )
